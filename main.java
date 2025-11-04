@@ -21,8 +21,7 @@ public class main {
         books.book_list(book, username, redeem_code, title, availability);
         
         main_ui.banner();
-        //String name = null;
-        //int role;
+        
         boolean running = true;
 
         OUTER:
@@ -133,3 +132,4 @@ public class main {
         }
     }
 }
+
