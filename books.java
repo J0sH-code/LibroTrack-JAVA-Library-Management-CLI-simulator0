@@ -126,10 +126,6 @@ public class books {
             int returned_book = scanner.nextInt() - 1;
             scanner.nextLine(); 
 
-            // if (returned_book == 0) {
-            //     break;
-            // }
-
             System.out.println(borrowed_list.get(returned_book).title);
             for (int i = 0; i < book.size(); i++) {
                 if (book.get(i).title.equals(borrowed_list.get(returned_book).title)) {
@@ -157,3 +153,4 @@ public class books {
         return password;
     }
 }
+
