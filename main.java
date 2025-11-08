@@ -29,12 +29,8 @@ public class main {
                 System.out.print(main_ui.center_space()+"Select role: ");
                 int role = scanner.nextInt();
                 switch (role) {
-                    case 1 -> {
-                        access_admin();
-                    }
-                    case 2 -> { 
-                        access_user(name);
-                    }
+                    case 1 -> access_admin();
+                    case 2 -> access_user(name);
                     default -> main_ui.error_message(1, 2);
                 }
             } catch (Exception InputMismatchException) {
@@ -105,9 +101,7 @@ public class main {
                 int options = scanner.nextInt();
                 switch (options) {
                     case 1 -> main_ui.book_list(book, book.size());
-                    case 2 -> {
-                        borrowBook(book, name);
-                    }
+                    case 2 -> borrowBook(book, name);
                     case 3 -> books.return_book(book, name, scanner);
                     case 4 -> {
                         System.out.print(main_ui.center_space()+"Enter your name (NO SPACES): ");
